@@ -1,0 +1,4 @@
+Email,Password,Error box colour,Message
+fibefi123,password,"rgba(243, 81, 92, 1)",Invalid email address
+fibefi9357@adeata.com,pass,"rgba(243, 81, 92, 1)",Invalid password
+fibefi9357@adeata.com,passwod,"rgba(243, 81, 92, 1)",Authentication failed
