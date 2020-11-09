@@ -18,7 +18,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -36,7 +35,7 @@ import com.project.utils.PropertyReader;
 
 import au.com.bytecode.opencsv.CSVReader;
 
-public class BaseClass extends TestListenerAdapter
+public class BaseClass //extends TestListenerAdapter
 {
 	WebDriver driver = null;
 	public static ExtentHtmlReporter htmlReporter = null;
@@ -50,8 +49,8 @@ public class BaseClass extends TestListenerAdapter
 	     extent.attachReporter(htmlReporter);
 	     extent.setSystemInfo("Host Name", "SoftwareTesting");
 	     extent.setSystemInfo("Environment", "Automation Testing");
-	     extent.setSystemInfo("User Name", "TestEngineer");
-		 htmlReporter.config().setDocumentTitle("Apparel Store Automation Report");
+	     extent.setSystemInfo("User Name", "Srinivas Sannidhi");
+		 htmlReporter.config().setDocumentTitle("Automation Report");
 		 htmlReporter.config().setReportName("Selenium Regression Test Suite");
 		 htmlReporter.config().setTheme(Theme.STANDARD);		
 	 }
@@ -60,7 +59,6 @@ public class BaseClass extends TestListenerAdapter
 	public void initiateDriver() throws IOException{
 		
 		String browser = PropertyReader.ReadProperty("browser");
-//		System.out.println("|"+browser+"|");
 		if(browser.trim().equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", PropertyReader.ReadProperty("chromedriverpath"));
@@ -118,60 +116,23 @@ public class BaseClass extends TestListenerAdapter
 		}
 		return creds;
 	}
-	
-	  @Override
-	  public void onTestFailure(ITestResult result) {
-		  System.out.println("result is : "+result+logger+"\\");
-			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed ", ExtentColor.RED));
-			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed ", ExtentColor.RED));
-			try {
-				logger.fail("Test Case Failed Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	  }
-	 
-	  @Override
-	  public void onTestSkipped(ITestResult result) {
-		  System.out.println("result is : "+result+logger+"\\");
-			logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped ", ExtentColor.ORANGE));
-			try {
-				logger.log(Status.SKIP,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	  }
-	 
-	  @Override
-	  public void onTestSuccess(ITestResult result) {
-		  System.out.println("result is : "+result+logger+"\\");
-			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case Passed ", ExtentColor.GREEN));
-			try {
-				logger.log(Status.PASS,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 
-	  }
 	@AfterMethod
 	public void CloseBrowser(ITestResult result) throws IOException	{
-//		if(result.getStatus() == ITestResult.FAILURE){
-//			//log the results
-//			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed ", ExtentColor.RED));
-//			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed ", ExtentColor.RED));
-//			logger.fail("Test Case Failed Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-//		}
-//		else if(result.getStatus() == ITestResult.SKIP){
-//			logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped ", ExtentColor.ORANGE));
-//			logger.log(Status.SKIP,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-//		}
-//		else if(result.getStatus() == ITestResult.SUCCESS){
-//			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case Passed ", ExtentColor.GREEN));
-//			logger.log(Status.PASS,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
-//		}
+		if(result.getStatus() == ITestResult.FAILURE){
+			//log the results
+			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed ", ExtentColor.RED));
+			logger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed ", ExtentColor.RED));
+			logger.fail("Test Case Failed Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
+		}
+		else if(result.getStatus() == ITestResult.SKIP){
+			logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped ", ExtentColor.ORANGE));
+			logger.log(Status.SKIP,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
+		}
+		else if(result.getStatus() == ITestResult.SUCCESS){
+			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case Passed ", ExtentColor.GREEN));
+			logger.log(Status.PASS,"Snapshot is below - " + logger.addScreenCaptureFromPath(getScreenshot(driver,result.getName())));
+		}
 		
 		// logic for closing driver
 		driver.quit();
@@ -179,7 +140,7 @@ public class BaseClass extends TestListenerAdapter
 	}
 	
 	@AfterSuite
-	public void stopTest(){
+	public void stopTest()	{
 		extent.flush(); //at the end of all tests - it will append the test results to the htmlreport when flushed
 	}
 	

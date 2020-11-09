@@ -24,7 +24,7 @@ public class TempMailGetter {
 		
 		System.setProperty("webdriver.chrome.driver", PropertyReader.ReadProperty("chromedriverpath"));
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+//		options.addArguments("--headless");
 		driver1 = new ChromeDriver(options);
 		driver1.get("https://temp-mail.org/en/api/");
 		WebDriverWait wait = new WebDriverWait(driver1, 10);

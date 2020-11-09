@@ -46,6 +46,7 @@ public class PlacingOrder extends BaseClass{
 		PaymentPage pay = ship.clickOnProceedBtn();
 		OrderSummaryPage osp = pay.clickOnPayByCheck();
 		OrderConfirmationPage ocp = osp.clickOnIConfirmBtn();
+		logger = extent.createTest("Placing order1");
 		Assert.assertTrue(ocp.ConfirmationMessageContains("Your order on My Store is complete"));	
 		
 	}

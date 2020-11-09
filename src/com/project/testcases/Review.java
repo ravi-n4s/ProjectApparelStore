@@ -29,8 +29,8 @@ public class Review extends BaseClass{
 		pp.setReviewComment(data[4]);
 		pp.clickSendBtn();
 		
-//		logger = extent.createTest("Review");
-//		logger.createNode("Error Pop-up asking for more than 50 char");
+		logger = extent.createTest("Review");
+		logger.createNode("Error Pop-up asking for more than 50 char");
 		Assert.assertTrue(pp.PopupContains(data[5]));
 	}
 

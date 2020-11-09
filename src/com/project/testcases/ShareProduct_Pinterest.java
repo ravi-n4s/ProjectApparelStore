@@ -23,7 +23,7 @@ public class ShareProduct_Pinterest extends BaseClass{
 		pin.setEmail(data[0]);
 		pin.setPassword(data[1]);
 		
-		logger = extent.createTest("Share Product - PinIt");
+//		logger = extent.createTest("Share Product - PinIt");
 		softAssert.assertEquals(pin.getEmail(), data[0]);
 		softAssert.assertEquals(pin.getPassword(), data[1]);
 		softAssert.assertAll();

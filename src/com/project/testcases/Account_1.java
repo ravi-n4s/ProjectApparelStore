@@ -20,8 +20,8 @@ public class Account_1 extends BaseClass {
 		AuthenticationPage ap = ip.clickSignIn();
 		ip = null;
 		
-//		ap.enterEmailAddress(TempMailGetter.getTempMail());
-		ap.enterEmailAddress("wabayex3284443@aieen.com");
+		ap.enterEmailAddress(TempMailGetter.getTempMail());
+//		ap.enterEmailAddress("wabayex3284443@aieen.com");
 		
 		CreateAnAccountPage caap = ap.clickOnCreateAnAccountBtn();
 		
