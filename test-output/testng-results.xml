@@ -1,75 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="89016" started-at="2020-11-09T03:54:36Z" finished-at="2020-11-09T03:56:05Z">
+  <suite name="Default suite" duration-ms="21479" started-at="2020-11-09T08:48:32Z" finished-at="2020-11-09T08:48:54Z">
     <groups>
     </groups>
-    <test name="Automation" duration-ms="89016" started-at="2020-11-09T03:54:36Z" finished-at="2020-11-09T03:56:05Z">
-      <class name="com.project.testcases.Account_1">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.project.testcases.Account_1@ba8d91c]" name="startReport" is-config="true" duration-ms="127" started-at="2020-11-09T09:24:36Z" finished-at="2020-11-09T09:24:36Z">
+    <test name="Default test" duration-ms="21479" started-at="2020-11-09T08:48:32Z" finished-at="2020-11-09T08:48:54Z">
+      <class name="com.project.testcases.Search">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.project.testcases.Search@2aafb23c]" name="startReport" is-config="true" duration-ms="183" started-at="2020-11-09T14:18:32Z" finished-at="2020-11-09T14:18:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="initiateDriver()[pri:0, instance:com.project.testcases.Account_1@ba8d91c]" name="initiateDriver" is-config="true" duration-ms="14264" started-at="2020-11-09T09:24:36Z" finished-at="2020-11-09T09:24:50Z">
+        <test-method status="PASS" signature="initiateDriver()[pri:0, instance:com.project.testcases.Search@2aafb23c]" name="initiateDriver" is-config="true" duration-ms="16124" started-at="2020-11-09T14:18:32Z" finished-at="2020-11-09T14:18:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method status="PASS" signature="RegisterAccount([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Account_1@ba8d91c]" name="RegisterAccount" duration-ms="43247" started-at="2020-11-09T09:24:50Z" data-provider="TestData" finished-at="2020-11-09T09:25:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@77bd7fe7]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="SearctTestCase()[pri:0, instance:com.project.testcases.Search@2aafb23c]" name="SearctTestCase" duration-ms="3518" started-at="2020-11-09T14:18:48Z" finished-at="2020-11-09T14:18:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterAccount -->
-        <test-method status="PASS" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:com.project.testcases.Account_1@ba8d91c]" name="CloseBrowser" is-config="true" duration-ms="2223" started-at="2020-11-09T09:25:34Z" finished-at="2020-11-09T09:25:36Z">
+        </test-method> <!-- SearctTestCase -->
+        <test-method status="PASS" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:com.project.testcases.Search@2aafb23c]" name="CloseBrowser" is-config="true" duration-ms="1831" started-at="2020-11-09T14:18:52Z" finished-at="2020-11-09T14:18:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisterAccount status=SUCCESS method=Account_1.RegisterAccount([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Account_1@ba8d91c] output={null}]]]>
+                <![CDATA[[TestResult name=SearctTestCase status=SUCCESS method=Search.SearctTestCase()[pri:0, instance:com.project.testcases.Search@2aafb23c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="stopTest()[pri:0, instance:com.project.testcases.Account_1@ba8d91c]" name="stopTest" is-config="true" duration-ms="629" started-at="2020-11-09T09:26:04Z" finished-at="2020-11-09T09:26:05Z">
+        <test-method status="PASS" signature="stopTest()[pri:0, instance:com.project.testcases.Search@2aafb23c]" name="stopTest" is-config="true" duration-ms="299" started-at="2020-11-09T14:18:54Z" finished-at="2020-11-09T14:18:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopTest -->
-      </class> <!-- com.project.testcases.Account_1 -->
-      <class name="com.project.testcases.Account_2">
-        <test-method status="PASS" signature="initiateDriver()[pri:0, instance:com.project.testcases.Account_2@5a4aa2f2]" name="initiateDriver" is-config="true" duration-ms="13770" started-at="2020-11-09T09:25:36Z" finished-at="2020-11-09T09:25:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateDriver -->
-        <test-method status="PASS" signature="RegisterAccount([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Account_2@5a4aa2f2]" name="RegisterAccount" duration-ms="13664" started-at="2020-11-09T09:25:50Z" data-provider="TestData" finished-at="2020-11-09T09:26:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@35d3ab60]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterAccount -->
-        <test-method status="PASS" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:com.project.testcases.Account_2@5a4aa2f2]" name="CloseBrowser" is-config="true" duration-ms="1081" started-at="2020-11-09T09:26:03Z" finished-at="2020-11-09T09:26:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RegisterAccount status=SUCCESS method=Account_2.RegisterAccount([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Account_2@5a4aa2f2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.project.testcases.Account_2 -->
-    </test> <!-- Automation -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.project.testcases.Search -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

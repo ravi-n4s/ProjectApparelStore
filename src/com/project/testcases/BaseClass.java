@@ -109,6 +109,7 @@ public class BaseClass //extends TestListenerAdapter
 		
 		// create Iterator reference
 		Iterator<String[]> iter= li.iterator();
+		System.out.println(li.size());
 		
 		String[][] creds = new String[li.size()-1][iter.next().length];		
 		for(int i=0; iter.hasNext(); i++){
