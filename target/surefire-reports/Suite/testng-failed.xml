@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="none">
+  <test name="Automation(failed)" parallel="none">
+    <classes>
+      <class name="com.project.testcases.Search">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.Search -->
+      <class name="com.project.testcases.ShareProduct_Pinterest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.ShareProduct_Pinterest -->
+      <class name="com.project.testcases.ShareProduct_Facebook">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.ShareProduct_Facebook -->
+      <class name="com.project.testcases.Manufacturers">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+          <include name="SearctTestCase" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.project.testcases.Manufacturers -->
+      <class name="com.project.testcases.Signin_Valid">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.Signin_Valid -->
+      <class name="com.project.testcases.PlacingOrder">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+          <include name="PlacingOrderPayByCheck" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.project.testcases.PlacingOrder -->
+      <class name="com.project.testcases.Review">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+          <include name="WriteAReview" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.project.testcases.Review -->
+      <class name="com.project.testcases.Account_1">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="startReport"/>
+          <include name="initiateDriver"/>
+          <include name="stopTest"/>
+        </methods>
+      </class> <!-- com.project.testcases.Account_1 -->
+      <class name="com.project.testcases.Signin_Invalid">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.Signin_Invalid -->
+      <class name="com.project.testcases.Account_2">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+          <include name="RegisterAccount" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.project.testcases.Account_2 -->
+      <class name="com.project.testcases.LogOff">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.LogOff -->
+      <class name="com.project.testcases.ShareProduct_GooglePlus">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.project.testcases.ShareProduct_GooglePlus -->
+    </classes>
+  </test> <!-- Automation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

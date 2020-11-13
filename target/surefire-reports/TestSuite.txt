@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 699.665 sec <<< FAILURE! - in TestSuite
+RegisterAccount(com.project.testcases.Account_2)  Time elapsed: 38.789 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.project.testcases.Account_2.RegisterAccount(Account_2.java:42)
+
+SearctTestCase(com.project.testcases.Manufacturers)  Time elapsed: 4.574 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.project.testcases.Manufacturers.SearctTestCase(Manufacturers.java:21)
+
+WriteAReview(com.project.testcases.Review)  Time elapsed: 14.808 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.project.testcases.Review.WriteAReview(Review.java:34)
+
+PlacingOrderPayByCheck(com.project.testcases.PlacingOrder)  Time elapsed: 48.801 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.project.testcases.PlacingOrder.PlacingOrderPayByCheck(PlacingOrder.java:90)
+

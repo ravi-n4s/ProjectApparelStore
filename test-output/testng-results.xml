@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21935" started-at="2020-11-09T15:57:21Z" finished-at="2020-11-09T15:57:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21935" started-at="2020-11-09T15:57:21Z" finished-at="2020-11-09T15:57:43Z">
+      <class name="com.project.testcases.Manufacturers">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260]" name="startReport" is-config="true" duration-ms="238" started-at="2020-11-09T21:27:21Z" finished-at="2020-11-09T21:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="initiateDriver()[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260]" name="initiateDriver" is-config="true" duration-ms="16250" started-at="2020-11-09T21:27:21Z" finished-at="2020-11-09T21:27:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method status="PASS" signature="SearctTestCase([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260]" name="SearctTestCase" duration-ms="3778" started-at="2020-11-09T21:27:37Z" data-provider="TestData" finished-at="2020-11-09T21:27:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@59a008ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearctTestCase -->
+        <test-method status="PASS" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260]" name="CloseBrowser" is-config="true" duration-ms="1883" started-at="2020-11-09T21:27:41Z" finished-at="2020-11-09T21:27:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearctTestCase status=SUCCESS method=Manufacturers.SearctTestCase([Ljava.lang.String;)[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="stopTest()[pri:0, instance:com.project.testcases.Manufacturers@2f7c7260]" name="stopTest" is-config="true" duration-ms="1645" started-at="2020-11-09T21:27:43Z" finished-at="2020-11-09T21:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+      </class> <!-- com.project.testcases.Manufacturers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

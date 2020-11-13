@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>E:\Selenium_Project_Workspace\ApparelStore_Maven\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 4 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.PlacingOrder" hash-for-method="PlacingOrderPayByCheck([fibefi9357@adeata.com, password, Your order on My Store is complete])">PlacingOrderPayByCheck([fibefi9357@adeata.com, password, Your order on My Store is complete])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Account_2" hash-for-method="RegisterAccount([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345,...)">RegisterAccount([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Manufacturers" hash-for-method="SearctTestCase([cotton])">SearctTestCase([cotton])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Review" hash-for-method="WriteAReview([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char])">WriteAReview([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.LogOff" hash-for-method="Logoff([fibefi9357@adeata.com, password, My account - My Store, Login - My store])">Logoff([fibefi9357@adeata.com, password, My account - My Store, Login - My store])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.PlacingOrder" hash-for-method="PlacingOrderPayByWire([fibefi9357@adeata.com, password, Your order on My Store is complete])">PlacingOrderPayByWire([fibefi9357@adeata.com, password, Your order on My Store is complete])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Account_1" hash-for-method="RegisterAccount([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890,...)">RegisterAccount([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Account_2" hash-for-method="RegisterAccount([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, ...)">RegisterAccount([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Search" hash-for-method="SearctTestCase([cotton])">SearctTestCase([cotton])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.ShareProduct_Facebook" hash-for-method="ShareProductFacebook([automationpractice])">ShareProductFacebook([automationpractice])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.ShareProduct_GooglePlus" hash-for-method="ShareProductGooglePlus([email])">ShareProductGooglePlus([email])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.ShareProduct_Pinterest" hash-for-method="ShareProductPinIt([email, pass])">ShareProductPinIt([email, pass])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Signin_Valid" hash-for-method="SignIn([wayex32843@aieen.com, password])">SignIn([wayex32843@aieen.com, password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Signin_Invalid" hash-for-method="SignInInvalid([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed])">SignInInvalid([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Signin_Invalid" hash-for-method="SignInInvalid([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address])">SignInInvalid([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.project.testcases.Signin_Invalid" hash-for-method="SignInInvalid([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password])">SignInInvalid([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.project.testcases.Manufacturers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearctTestCase([cotton])">
+                  </a> <!-- SearctTestCase([cotton]) -->
+                  <span class="method-name">SearctTestCase</span>
+                  <span class="parameters">([cotton])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.project.testcases.Manufacturers.SearctTestCase(Manufacturers.java:21)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.project.testcases.Review</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WriteAReview([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char])">
+                  </a> <!-- WriteAReview([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char]) -->
+                  <span class="method-name">WriteAReview</span>
+                  <span class="parameters">([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.project.testcases.Review.WriteAReview(Review.java:34)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.project.testcases.PlacingOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlacingOrderPayByCheck([fibefi9357@adeata.com, password, Your order on My Store is complete])">
+                  </a> <!-- PlacingOrderPayByCheck([fibefi9357@adeata.com, password, Your order on My Store is complete]) -->
+                  <span class="method-name">PlacingOrderPayByCheck</span>
+                  <span class="parameters">([fibefi9357@adeata.com, password, Your order on My Store is complete])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.project.testcases.PlacingOrder.PlacingOrderPayByCheck(PlacingOrder.java:90)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.project.testcases.Account_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAccount([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345,...)">
+                  </a> <!-- RegisterAccount([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345,...) -->
+                  <span class="method-name">RegisterAccount</span>
+                  <span class="parameters">([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345, , 1234567890, Country field unselected, country])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.project.testcases.Account_2.RegisterAccount(Account_2.java:42)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.Search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearctTestCase([cotton])">
+                  </a> <!-- SearctTestCase([cotton]) -->
+                  <span class="method-name">SearctTestCase</span>
+                  <span class="parameters">([cotton])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.ShareProduct_Pinterest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShareProductPinIt([email, pass])">
+                  </a> <!-- ShareProductPinIt([email, pass]) -->
+                  <span class="method-name">ShareProductPinIt</span>
+                  <span class="parameters">([email, pass])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.ShareProduct_Facebook</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShareProductFacebook([automationpractice])">
+                  </a> <!-- ShareProductFacebook([automationpractice]) -->
+                  <span class="method-name">ShareProductFacebook</span>
+                  <span class="parameters">([automationpractice])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.Signin_Valid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignIn([wayex32843@aieen.com, password])">
+                  </a> <!-- SignIn([wayex32843@aieen.com, password]) -->
+                  <span class="method-name">SignIn</span>
+                  <span class="parameters">([wayex32843@aieen.com, password])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.PlacingOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlacingOrderPayByWire([fibefi9357@adeata.com, password, Your order on My Store is complete])">
+                  </a> <!-- PlacingOrderPayByWire([fibefi9357@adeata.com, password, Your order on My Store is complete]) -->
+                  <span class="method-name">PlacingOrderPayByWire</span>
+                  <span class="parameters">([fibefi9357@adeata.com, password, Your order on My Store is complete])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.Account_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAccount([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890,...)">
+                  </a> <!-- RegisterAccount([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890,...) -->
+                  <span class="method-name">RegisterAccount</span>
+                  <span class="parameters">([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890, Welcome to your account. Here you can manage all of your personal information and orders.])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.Signin_Invalid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInInvalid([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed])">
+                  </a> <!-- SignInInvalid([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed]) -->
+                  <span class="method-name">SignInInvalid</span>
+                  <span class="parameters">([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInInvalid([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address])">
+                  </a> <!-- SignInInvalid([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address]) -->
+                  <span class="method-name">SignInInvalid</span>
+                  <span class="parameters">([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInInvalid([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password])">
+                  </a> <!-- SignInInvalid([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password]) -->
+                  <span class="method-name">SignInInvalid</span>
+                  <span class="parameters">([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.ShareProduct_GooglePlus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShareProductGooglePlus([email])">
+                  </a> <!-- ShareProductGooglePlus([email]) -->
+                  <span class="method-name">ShareProductGooglePlus</span>
+                  <span class="parameters">([email])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.LogOff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logoff([fibefi9357@adeata.com, password, My account - My Store, Login - My store])">
+                  </a> <!-- Logoff([fibefi9357@adeata.com, password, My account - My Store, Login - My store]) -->
+                  <span class="method-name">Logoff</span>
+                  <span class="parameters">([fibefi9357@adeata.com, password, My account - My Store, Login - My store])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.testcases.Account_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterAccount([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, ...)">
+                  </a> <!-- RegisterAccount([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, ...) -->
+                  <span class="method-name">RegisterAccount</span>
+                  <span class="parameters">([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, United States, 1234567890, Entering less than 4 char in Zip/Postal code field, The Zip/Postal code you've entered is invalid. It must follow this format: 00000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Selenium_Project_Workspace\ApparelStore_Maven\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+  &lt;test name=&quot;Automation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.project.testcases.Account_1&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Account_2&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Signin_Valid&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Signin_Invalid&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.LogOff&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Search&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Manufacturers&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.Review&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.ShareProduct_Pinterest&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.ShareProduct_GooglePlus&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.ShareProduct_Facebook&quot;/&gt;
+      &lt;class name=&quot;com.project.testcases.PlacingOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Automation --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Automation (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PlacingOrderPayByWire')
+data.setCell(0, 2, 'com.project.testcases.PlacingOrder')
+data.setCell(0, 3, 50449);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PlacingOrderPayByCheck')
+data.setCell(1, 2, 'com.project.testcases.PlacingOrder')
+data.setCell(1, 3, 48802);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'RegisterAccount')
+data.setCell(2, 2, 'com.project.testcases.Account_2')
+data.setCell(2, 3, 38154);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'RegisterAccount')
+data.setCell(3, 2, 'com.project.testcases.Account_1')
+data.setCell(3, 3, 32273);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RegisterAccount')
+data.setCell(4, 2, 'com.project.testcases.Account_2')
+data.setCell(4, 3, 30339);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SignInInvalid')
+data.setCell(5, 2, 'com.project.testcases.Signin_Invalid')
+data.setCell(5, 3, 17044);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'WriteAReview')
+data.setCell(6, 2, 'com.project.testcases.Review')
+data.setCell(6, 3, 14808);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ShareProductPinIt')
+data.setCell(7, 2, 'com.project.testcases.ShareProduct_Pinterest')
+data.setCell(7, 3, 11730);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Logoff')
+data.setCell(8, 2, 'com.project.testcases.LogOff')
+data.setCell(8, 3, 8921);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ShareProductGooglePlus')
+data.setCell(9, 2, 'com.project.testcases.ShareProduct_GooglePlus')
+data.setCell(9, 3, 7656);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SignIn')
+data.setCell(10, 2, 'com.project.testcases.Signin_Valid')
+data.setCell(10, 3, 6570);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SignInInvalid')
+data.setCell(11, 2, 'com.project.testcases.Signin_Invalid')
+data.setCell(11, 3, 5826);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SignInInvalid')
+data.setCell(12, 2, 'com.project.testcases.Signin_Invalid')
+data.setCell(12, 3, 5523);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ShareProductFacebook')
+data.setCell(13, 2, 'com.project.testcases.ShareProduct_Facebook')
+data.setCell(13, 3, 4783);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'SearctTestCase')
+data.setCell(14, 2, 'com.project.testcases.Search')
+data.setCell(14, 3, 4675);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'SearctTestCase')
+data.setCell(15, 2, 'com.project.testcases.Manufacturers')
+data.setCell(15, 3, 4575);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">22 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.ShareProduct_Pinterest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.ShareProduct_Facebook</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Manufacturers</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Signin_Valid</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Review</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.PlacingOrder</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Signin_Invalid</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.Account_2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.LogOff</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.testcases.ShareProduct_GooglePlus</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+                <span class="ignored-method-name">stopTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Account_1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterAccount([Mr., first, last, password, 15, july, 1999, address, city, texas, 10001, United States, 1234567890,...)</span>
+                <span class="method-start">18015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=RegisterAccount status=SUCCESS method=Account_1.RegisterAccount([Ljava.lang.String;...)</span>
+                <span class="method-start">50288 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Account_2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">52658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterAccount([wabcayex3112843@aieen.com, Mrs., first, last, password, 15, july, 1999, address, city, texas, 123, ...)</span>
+                <span class="method-start">78533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=RegisterAccount status=SUCCESS method=Account_2.RegisterAccount([Ljava.lang.String;...)</span>
+                <span class="method-start">108872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">109896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RegisterAccount([wabcayex3112843@aieen.com, Mr., first, last, password, 15, july, 1999, address, city, texas, 12345,...)</span>
+                <span class="method-start">126369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=RegisterAccount status=FAILURE method=Account_2.RegisterAccount([Ljava.lang.String;...)</span>
+                <span class="method-start">165156 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Signin_Valid</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">168638 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignIn([wayex32843@aieen.com, password])</span>
+                <span class="method-start">182494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SignIn status=SUCCESS method=Signin_Valid.SignIn([Ljava.lang.String;)[pri:0, instan...)</span>
+                <span class="method-start">189064 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Signin_Invalid</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">190799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignInInvalid([fibefi123, password, rgba(243, 81, 92, 1), Invalid email address])</span>
+                <span class="method-start">215090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SignInInvalid status=SUCCESS method=Signin_Invalid.SignInInvalid([Ljava.lang.String...)</span>
+                <span class="method-start">220613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">221755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignInInvalid([fibefi9357@adeata.com, pass, rgba(243, 81, 92, 1), Invalid password])</span>
+                <span class="method-start">253179 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SignInInvalid status=SUCCESS method=Signin_Invalid.SignInInvalid([Ljava.lang.String...)</span>
+                <span class="method-start">270223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">271327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignInInvalid([fibefi9357@adeata.com, passwod, rgba(243, 81, 92, 1), Authentication failed])</span>
+                <span class="method-start">366342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SignInInvalid status=SUCCESS method=Signin_Invalid.SignInInvalid([Ljava.lang.String...)</span>
+                <span class="method-start">372168 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.LogOff</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">373483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logoff([fibefi9357@adeata.com, password, My account - My Store, Login - My store])</span>
+                <span class="method-start">395219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=Logoff status=SUCCESS method=LogOff.Logoff([Ljava.lang.String;)[pri:0, instance:com...)</span>
+                <span class="method-start">404140 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Search</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">405170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearctTestCase([cotton])</span>
+                <span class="method-start">423043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SearctTestCase status=SUCCESS method=Search.SearctTestCase([Ljava.lang.String;)[pri...)</span>
+                <span class="method-start">427718 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Manufacturers</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">428780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearctTestCase([cotton])</span>
+                <span class="method-start">445030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=SearctTestCase status=FAILURE method=Manufacturers.SearctTestCase([Ljava.lang.Strin...)</span>
+                <span class="method-start">449605 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Review</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">451530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WriteAReview([fibefi9357@adeata.com, password, 2, Review title, less than 50 char, enter more than 50 char])</span>
+                <span class="method-start">469898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=WriteAReview status=FAILURE method=Review.WriteAReview([Ljava.lang.String;)[pri:0, ...)</span>
+                <span class="method-start">484706 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.ShareProduct_Pinterest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">487017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ShareProductPinIt([email, pass])</span>
+                <span class="method-start">499572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=ShareProductPinIt status=SUCCESS method=ShareProduct_Pinterest.ShareProductPinIt([L...)</span>
+                <span class="method-start">511302 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.ShareProduct_GooglePlus</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">515370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ShareProductGooglePlus([email])</span>
+                <span class="method-start">531312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=ShareProductGooglePlus status=SUCCESS method=ShareProduct_GooglePlus.ShareProductGo...)</span>
+                <span class="method-start">538969 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.ShareProduct_Facebook</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">539951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ShareProductFacebook([automationpractice])</span>
+                <span class="method-start">554161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=ShareProductFacebook status=SUCCESS method=ShareProduct_Facebook.ShareProductFacebo...)</span>
+                <span class="method-start">558944 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.PlacingOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">560971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PlacingOrderPayByCheck([fibefi9357@adeata.com, password, Your order on My Store is complete])</span>
+                <span class="method-start">576041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=PlacingOrderPayByCheck status=FAILURE method=PlacingOrder.PlacingOrderPayByCheck([L...)</span>
+                <span class="method-start">624843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateDriver</span>
+                <span class="method-start">626723 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PlacingOrderPayByWire([fibefi9357@adeata.com, password, Your order on My Store is complete])</span>
+                <span class="method-start">643649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowser([TestResult name=PlacingOrderPayByWire status=SUCCESS method=PlacingOrder.PlacingOrderPayByWire([Lja...)</span>
+                <span class="method-start">694099 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.testcases.Account_1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">stopTest</span>
+                <span class="method-start">696805 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

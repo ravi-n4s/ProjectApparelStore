@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite" verbose="1" > 
+  <test name="Automation">
+  
+    <classes>
+      <class name="com.project.testcases.Account_1"/>   
+      <class name="com.project.testcases.Account_2"/>
+ 	  <class name="com.project.testcases.Signin_Valid"/>
+ 	  <class name="com.project.testcases.Signin_Invalid"/>
+  	  <class name="com.project.testcases.LogOff"/> 
+ 	  <class name="com.project.testcases.Search"/>
+ 	  <class name="com.project.testcases.Manufacturers"/>
+ 	  <class name="com.project.testcases.Review"/>
+ 	  <class name="com.project.testcases.ShareProduct_Pinterest"/>
+ 	  <class name="com.project.testcases.ShareProduct_GooglePlus"/>
+ 	  <class name="com.project.testcases.ShareProduct_Facebook"/>
+ 	  <class name="com.project.testcases.PlacingOrder"/>
+    </classes>
+  </test>
+</suite>

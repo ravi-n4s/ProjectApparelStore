@@ -1,0 +1,3 @@
+Email,title,first name,last name,password,DOB_date,DOB_month,DOB_year,address,city,state,zipcode,country,mobile,Testname,Error Message
+wabcayex3112843@aieen.com,Mrs.,first,last,password,15,july,1999,address,city,texas,123,United States,1234567890,"Entering less than 4 char in Zip/Postal code field","The Zip/Postal code you've entered is invalid. It must follow this format: 00000"
+wabcayex3112843@aieen.com,Mr.,first,last,password,15,july,1999,address,city,texas,12345,,1234567890,"Country field unselected","country"
